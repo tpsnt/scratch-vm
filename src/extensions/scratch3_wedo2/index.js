@@ -664,7 +664,7 @@ class WeDo2 {
         return this._ble.write(
             BLEService.IO_SERVICE,
             uuid,
-            Base64Util.uint8ArrayToBase64(new Uint8Array(message)),
+            Base64Util.uint8ArrayToBase64(message),
             'base64'
         );
     }
